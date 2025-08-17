@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Garbage Cleaning Servicez</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://i.imgur.com/k4KQK6b.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+    .glitch {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3em;
+      position: relative;
+      color: white;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .glitch::before,
+    .glitch::after {
+      content: 'Garbage Cleaning Servicez';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      color: white;
+    }
+    .glitch::before {
+      animation: glitchTop 2s infinite linear;
+      color: #00f7ff;
+      top: -2px;
+    }
+    .glitch::after {
+      animation: glitchBottom 2s infinite linear;
+      color: #ff00c8;
+      top: 2px;
+    }
+    @keyframes glitchTop {
+      0% { clip: rect(0, 9999px, 0, 0); }
+      5% { clip: rect(0, 9999px, 10px, 0); }
+      10% { clip: rect(0, 9999px, 0, 0); }
+    }
+    @keyframes glitchBottom {
+      0% { clip: rect(0, 9999px, 0, 0); }
+      5% { clip: rect(5px, 9999px, 20px, 0); }
+      10% { clip: rect(0, 9999px, 0, 0); }
+    }
+    .content {
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      max-width: 800px;
+      margin: 40px auto;
+      border-radius: 10px;
+    }
+    h2 {
+      font-family: 'Permanent Marker', cursive;
+      font-size: 2em;
+      text-align: center;
+      color: #00f7ff;
+    }
+    .services, .contact {
+      margin-top: 30px;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      background: rgba(255, 255, 255, 0.1);
+      margin: 10px 0;
+      padding: 10px;
+      border-left: 4px solid #ff00c8;
+    }
+    .cta {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 1.2em;
+      background: #00f7ff;
+      color: black;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .contact-info {
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: center;
+    }
+    a {
+      color: #00f7ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glitch">Garbage Cleaning Servicez</div>
+
+  <div class="content">
+    <h2>We Clean Trash, Not Cut Corners.</h2>
+
+    <p style="text-align: center;">
+      Serving Albuquerque, Bernalillo, and Rio Rancho, NM – fast, reliable garbage removal and site cleanup.
+    </p>
+
+    <div class="cta">
+      Call Now for a Cleaner Space – <strong>505-347-4869</strong>
+    </div>
+
+    <div class="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Yard Debris and Junk Removal</li>
+        <li>Move-Out Cleanups</li>
+        <li>Construction Site Waste</li>
+        <li>Furniture and Appliance Hauling</li>
+        <li>Commercial Waste Disposal</li>
+      </ul>
+    </div>
+
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        📞 Phone: <a href="tel:5053474869">505-347-4869</a><br>
+        📧 Email: <a href="mailto:isaac.mv05@gmail.com">isaac.mv05@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
